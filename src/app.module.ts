@@ -8,7 +8,7 @@ dotenv.config();
 console.log(process.env.URI_MONGO);
 
 @Module({
-  imports: [MongooseModule.forRoot(process.env.URI_MONGO), TasksModule],
+  imports: [MongooseModule.forRoot(process.env.URI_MONGO_ATLAS), TasksModule],
   controllers: [],
   providers: [],
 })
